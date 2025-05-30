@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata for character encoding and responsive viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-page</title>
+    <!-- External stylesheets: custom styles and Font Awesome for icons -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Internal CSS for contact section styling -->
+    <style type="text/css">
+        /* Contact section container: centered with professional background */
+
+    </style>
+</head>
+<body>
+    <!-- Header Section: Navigation bar with logo and links -->
+    <header>
+        <div class="header-content">
+            <nav>
+                <img src="image/1000022707-removebg-preview.png" alt="Logo">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="achievement.html">Achievements</a></li>
+                    <li><a href="interests.html">Interests</a></li>
+                    <li><a href="calendar.html">Calendar</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="map.html">Map</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Section: Form for visitor follow-up -->
+    <section id="contact" class="contact-section">
+        <h1>Contact Me</h1>
+        <!-- Form submits data to Formspree endpoint -->
+        <form action="https://formspree.io/f/your_form_id" method="post">
+            <!-- Full Name: Required text input -->
+            <label for="name"><i class="fas fa-user"></i> Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <!-- Email: Required email input -->
+            <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Phone Number: Optional telephone input -->
+            <label for="phone"><i class="fas fa-phone"></i> Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <!-- Company Name: Optional text input -->
+            <label for="company"><i class="fas fa-building"></i> Company Name:</label>
+            <input type="text" id="company" name="company">
+
+            <!-- Address: Optional text input -->
+            <label for="address"><i class="fas fa-map-marker-alt"></i> Address:</label>
+            <input type="text" id="address" name="address">
+
+            <!-- Preferred Contact Method: Dropdown selection -->
+            <label for="contact-method"><i class="fas fa-comment"></i> Preferred Contact Method:</label>
+            <select id="contact-method" name="contact_method">
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+                <option value="social">Social Media</option>
+            </select>
+
+            <!-- Reason for Contact: Radio buttons, one selection required -->
+            <label><i class="fas fa-question-circle"></i> Reason for Contact:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="reason" value="inquiry" required><span>General Inquiry</span></label>
+                <label><input type="radio" name="reason" value="collaboration"><span>Collaboration</span></label>
+                <label><input type="radio" name="reason" value="feedback"><span>Feedback</span></label>
+            </div>
+
+            <!-- Interests: Checkboxes for multiple selections -->
+            <label><i class="fas fa-check-square"></i> Interests (Select all that apply):</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="interests" value="coding"><span>Coding</span></label>
+                <label><input type="checkbox" name="interests" value="design"><span>Design</span></label>
+                <label><input type="checkbox" name="interests" value="networking"><span>Networking</span></label>
+            </div>
+
+            <!-- Preferred Contact Date: Optional date input -->
+            <label for="contact-date"><i class="fas fa-calendar-alt"></i> Preferred Contact Date:</label>
+            <input type="date" id="contact-date" name="contact_date">
+
+            <!-- Message: Required textarea for detailed input -->
+            <label for="message"><i class="fas fa-comment-alt"></i> Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <!-- Additional Comments: Optional textarea -->
+            <label for="comments"><i class="fas fa-comments"></i> Additional Comments:</label>
+            <textarea id="comments" name="comments"></textarea>
+
+            <!-- Submit Button: Sends form data -->
+            <button type="submit"><i class="fas fa-paper-plane"></i> Send</button>
+        </form>
+    </section>
+
+    <!-- Footer: Copyright information -->
+    <footer>
+        <p>© 2025 Aathilingam S. All rights reserved.</p>
+    </footer>
+</body>
+</html>

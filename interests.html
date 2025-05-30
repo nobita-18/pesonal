@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>intrests-page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+            color: #333;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            background: linear-gradient(90deg, #6b7280, #4b5563);
+            color: #fff;
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+            opacity: 0.9;
+        }
+
+        /* Interests Grid */
+        .interests-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .interest-card {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+            position: relative;
+        }
+
+        .interest-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+            background-color: #f1f5f9;
+        }
+
+        .interest-card img {
+            width: 100%;
+            height: 100;
+            object-fit: cover;
+            transition: opacity 0.3s ease;
+        }
+
+        .interest-card:hover img {
+            opacity: 0.85;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+            position: relative;
+        }
+
+        .card-content h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: #1a1a1a;
+            transition: color 0.3s ease;
+        }
+
+        .interest-card:hover .card-content h2 {
+            color: #2563eb;
+        }
+
+        .card-content p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Creative Hover Overlay */
+        .interest-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(37, 99, 235, 0.1), rgba(37, 99, 235, 0.3));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 0;
+        }
+
+        .interest-card:hover::before {
+            opacity: 0.5;
+        }
+
+        .card-content * {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    
+        <!-- Header Section -->
+        <header>
+            <div class="header-content">
+                <nav>
+                    <img src="image/1000022707-removebg-preview.png" alt="Logo">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="achievement.html">Achievements</a></li>
+                        <li><a href="interests.html">Interests</a></li>
+                        <li><a href="calendar.html">Calendar</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                        <li><a href="map.html">Map</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </head>
+    <body>
+        <div class="container">
+            <!-- Header -->
+            <div class="header">
+                <h1>My Interests</h1>
+                <p>Discover the hobbies and passions that spark my creativity and joy.</p>
+            </div>
+    
+            <!-- Interests Grid -->
+            <div class="interests-grid">
+                <!-- Interest 1 -->
+                <div class="interest-card">
+                    <img src="image/kbd.jfif" alt="kabaddi">
+                    <div class="card-content">
+                        <h2>Kabaddi</h2>
+                        <p>Capturing the world through my lens, from vibrant landscapes to fleeting moments, is my creative escape.</p>
+                    </div>
+                </div>
+                <!-- Interest 2 -->
+                <div class="interest-card">
+                    <img src="image/v.jfif" alt="cricket">
+                    <div class="card-content">
+                        <h2>Cricket</h2>
+                        <p>Trekking through nature’s trails and mountains fuels my adventurous spirit and love for the outdoors.</p>
+                    </div>
+                </div>
+                <!-- Interest 3 -->
+                <div class="interest-card">
+                    <img src="image/html.jpeg" alt="Web Design">
+                    <div class="card-content">
+                        <h2>Web Design</h2>
+                        <p>Designing sleek, functional websites blends my passion for creativity and problem-solving with code.</p>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </body>
+    </html>
+    
+        
+        <footer>
+            <p>© 2025 Aathilingam S. All rights reserved.</p>
+        </footer>
+</body>
+</html>
